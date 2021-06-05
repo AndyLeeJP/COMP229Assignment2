@@ -1,9 +1,13 @@
 {
-  "name": "comp229assignment1",
+  "name": "comp229-f2020-assignment1",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node server.js"
+  },
+  "engines": {
+    "node": "^16.1.0",
+    "npm": "^7.11.2"
   },
   "dependencies": {
     "cookie-parser": "^1.4.5",
@@ -13,5 +17,18 @@
     "express-generator": "^4.16.1",
     "http-errors": "^1.8.0",
     "morgan": "^1.10.0"
-  }
+  },
+  "description": "asiignment1",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChaehyunLee11/COMP229Assignment1.git"
+  },
+  "author": "ChaehyunLee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChaehyunLee11/COMP229Assignment1/issues"
+  },
+  "homepage": "https://github.com/ChaehyunLee11/COMP229Assignment1#readme"
 }
