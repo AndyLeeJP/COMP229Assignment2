@@ -9,33 +9,21 @@
 <a href="mailto:rize1126jesse@gmail.com">rize1126jesse@gmail.com</a>
 <h2>Instagram</h1>
 <a href="https://www.instagram.com/punk_airjam/?hl=ja">punk_airjam</a>
-<p class="lead-form">mail form</p>
 
-<form>
-  <ul>
-      <li><div class="item">
-        <label class="label">Name</label>
-        <input class="inputs" type="text" name="name">
-        </div>
-      </li>
-    <li>
-      <div class="item">
-        <label class="label">Mail address</label>
-        <input class="inputs" type="email" name="email">
-      </div>
-    </li>
-    
-    <li>
-      <div class="item">
-        <label class="label">Question</label>
-        <textarea class="inputs"></textarea>
-      </div>
-    </li>
 
-    <div class="btn-area">
-      <input type="submit" value="send"><input type="reset" value="reset">
+<form id="contact">
+  <div class="container">
+    <div class="head">
+      <h2>Question Form</h2>
     </div>
-  </ul>
+    <input type="text" name="name" placeholder="Name" /><br />
+    <input  type="email" name="email" placeholder="Email" /><br />
+    <textarea type="text" name="message" placeholder="Message"></textarea><br />
+    <div class="message">Message Sent</div>
+    <button id="submit" type="submit">
+      Send!
+    </button>
+  </div>
 </form>
 <a href="/">back to home</a>
 

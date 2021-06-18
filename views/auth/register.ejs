@@ -1,0 +1,63 @@
+<%- include ("../components/header.ejs") %>
+<%- include ("../components/main_nav.ejs") %>
+
+
+<main>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!--message area-->
+    <% if(message.length > 0){%>
+        <div>
+            <%= message %>
+        </div>
+    <% } %>
+
+
+
+
+    <div>
+    <h1>Please Register</h1>
+    <br>
+    <form method="POST" autocomplete="off">
+        <fieldset class="form-group">
+            <label for="username">Username: </label>
+            <input type="text" class="form-control char-color"
+            name="username" placeholder="Enter username"
+            id="username" require autofocus>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control char-color"
+            name="password" placeholder="Enter password"
+            id="password" required >
+        </fieldset>
+        
+        <fieldset class="form-group">
+            <label for="eamil">Email:</label>
+            <input type="email" class="form-control char-color"
+            name="email" placeholder="Enter email address"
+            id="email" required >
+        </fieldset>
+        
+        <fieldset class="form-group">
+            <label for="displayName">Display Name:</label>
+            <input type="displayName" class="form-control char-color"
+            name="displayName" placeholder="Enter display Name"
+            id="displayName" required >
+        </fieldset>
+
+        <fieldset class="form-group text-right">
+            <label><input type="submit" class="btn btn-success char-color" value="Register" ></label>
+            <label><a href="/">
+                <input type="button" class="btn btn-warning char-color" value="cancel">
+            </a></label>
+        </fieldset>
+    </form>
+    </div>
+
+
+</main>
+
+
+<%- include ("../components/bottom_nav.ejs") %>
+<%- include ("../components/footer.ejs") %>

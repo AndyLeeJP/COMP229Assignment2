@@ -1,4 +1,12 @@
  <!--  Chaehyun Lee #301084271 03-6-2021 -->
 
 
-<a href="contactme.ejs">Contact me</a>
+<a href="contact">Contact me</a>
+
+
+
+<%if(typeof displayName == 'string' && displayName){%>
+    <a href="logout">Log out</a>
+<%} else {%>
+    <a href="login">Log in</a>
+<% } %>

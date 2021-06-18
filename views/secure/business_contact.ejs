@@ -1,0 +1,30 @@
+<%- include('../partials/header.ejs')-%>
+<%- include('../partials/main_nav.ejs')-%>
+
+<main class="container">
+    <h2>Business contact list</h2>
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>Contact Number</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+</main>
+
+<!--repeatable template row-->
+
+<% for(let count =0; count < ContactList.length; count++)(%>
+    <tr>
+        <td class="text-center"><%=ContactList[count].name %></td>
+        <td class="text-center"><%=ContactList[count].number %></td>
+        <td class="text-center"><%=ContactList[count].email %></td>
+        <td class="text-center">
+            <a href ="/business-list/update/<%=ContactList[count]._id %>">update</a>
+        </td>
+        <td class="text-center">
+            <a href="/buniness-list/delete<%=ContactList[count]._id% %>">Delete</a>
+        </td>
+    </tr>
+
+<%)%>

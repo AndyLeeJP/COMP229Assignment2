@@ -1,0 +1,49 @@
+<%- include('../partials/header.ejs')-%>
+<%- include('../partials/main_nav.ejs')-%>
+
+<!--Content for update page-->
+<div class="container">
+    <div>
+        <h1 class="text-center">Update List</h1>
+        <form class="form" method="POST">
+        <label for="">Name</label>
+        <input type="text"
+        name="name"
+        class="form-control"
+        id="nameTextField"
+        placeholder="Enter the Name"
+        value="<%= conList.name %>"
+        required>   
+    </div>
+    <div>
+        <label for="">Contact Number</label>
+        <input type="text" class="form-control"
+        name="number"
+        id="numberTextField"
+        placeholder="1111111111"
+        value="<%= conList.number %>"
+        required>
+    </div>
+    <div>
+        <label for="">Email</label>
+        <input type="text" class="form-control"
+        name="email"
+        id="emailTextField"
+        placeholder="abcdf@gmail.com"
+        value="<%= conList.email %>"
+        required>
+    </div>
+
+    <label>
+        <button type="submit">
+        <i>Submit</i>
+        </button>
+    </label>
+    <label>
+        <a href="/business-list">
+        <i>Canzel</i>
+        </a>
+    </label>
+
+    </form>
+</div>

@@ -1,0 +1,25 @@
+<%- include partials/main_nav.ejs%>
+
+<!--main content-->
+<main>
+    <div>
+        <h1><%- title %></h1>
+        <br>
+        <tr>
+            <th class="text-center">name</th>
+            <th class="text-center">Number</th>
+            <th class="text-center">email</th>
+        </tr>
+
+        <!--Repeatable template row-->
+
+        <%for(let count = 0; count < loginList.legth; count++){%>
+            <tr>
+                <th class="text-center"><%- loginList[count].name%></th>
+                <th class="text-center"><%- loginList[count].Number%></th>
+                <th class="text-center"><%- loginList[count].email%></th>
+            </tr>
+        <% } %>
+    </div>
+
+</main>
